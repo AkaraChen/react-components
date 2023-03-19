@@ -1,6 +1,6 @@
 {
     "name": "@akrc/react-components",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "",
     "type": "module",
     "main": "index.js",
@@ -42,5 +42,8 @@
         "@headlessui/react": "^1.7.13",
         "framer-motion": "^10.6.0",
         "styled-components": "^5.3.9"
-    }
+    },
+    "files": [
+        "dist"
+    ]
 }

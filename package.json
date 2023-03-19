@@ -1,6 +1,6 @@
 {
     "name": "@akrc/react-components",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "",
     "type": "module",
     "main": "index.js",
@@ -33,7 +33,7 @@
         "typescript": "5.0.2"
     },
     "exports": {
-        "tab": {
+        "./tab": {
             "import": "./dist/tab/index.js",
             "types": "./dist/tab/index.d.ts"
         }

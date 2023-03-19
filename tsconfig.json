@@ -3,6 +3,7 @@
         "jsx": "react-jsx",
         "declaration": true,
         "target": "ES2022",
-        "moduleResolution": "nodenext"
+        "esModuleInterop": true,
+        "moduleResolution": "bundler"
     }
 }

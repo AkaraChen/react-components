@@ -1,0 +1,12 @@
+{
+    "jsc": {
+        "parser": {
+            "jsx": true
+        },
+        "transform": {
+            "react": {
+                "runtime": "automatic"
+            }
+        }
+    }
+}

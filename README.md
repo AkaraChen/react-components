@@ -1,5 +1,30 @@
-# react-component-starter
+# @akrc/rc
 
-能用的 react 组件库开发模板。
+Yet another react component library for web.
 
-Rollup 打包，Ladle 做文档，支持导入原生 CSS 和 less，没啥 feature，仅仅是够用。
+## Installation
+
+```bash
+pnpm install @akrc/rc
+```
+
+## Usage
+
+```tsx
+import { Tab, Group, List, Panels, Panel } from '@akrc/rc/tab';
+
+export default function App() {
+    return (
+        <Group>
+            <List>
+                <Tab>React</Tab>
+                <Tab>Vue</Tab>
+            </List>
+        </Group>
+    );
+}
+```
+
+This library use `styled-component` under the hood, so you don't need to import any css file (I hate css-in-js, but it's very helpful in component library).
+
+Because I'm too lazy to optimize the bundle workflow, so you need to upgrade your TypeScript version to `^5.0.0` to enjoy fully TypeScript support.

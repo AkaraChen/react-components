@@ -58,8 +58,14 @@ const StyledHoverIndicator = styled(motion.div)`
 `;
 
 const StyledLabel = styled.label`
-    margin-left: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center
 `;
+
+const StyledSpan = styled.span`
+    margin-left: 0.5em;
+`
 
 export const Item: FC<ItemProps> = props => {
     const id = useId();
@@ -69,10 +75,12 @@ export const Item: FC<ItemProps> = props => {
             onPointerEnter={() => setHover(true)}
             onPointerLeave={() => setHover(false)}
         >
-            <StyledItem {...props} id={id}>
-                <StyledIndicator />
-            </StyledItem>
-            <StyledLabel htmlFor={id}>{props.children}</StyledLabel>
+            <StyledLabel htmlFor={id} style={{ display: 'flex' }}>
+                <StyledItem {...props} id={id}>
+                    <StyledIndicator />
+                </StyledItem>
+                <StyledSpan>{props.children}</StyledSpan>
+            </StyledLabel>
             {hover && (
                 <StyledHoverIndicator
                     layoutId="radio"

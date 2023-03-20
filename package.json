@@ -1,6 +1,6 @@
 {
-    "name": "@akrc/react-components",
-    "version": "0.0.5",
+    "name": "@akrc/rc",
+    "version": "0.0.0",
     "description": "",
     "type": "module",
     "main": "index.js",

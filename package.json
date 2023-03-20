@@ -36,10 +36,15 @@
         "./tab": {
             "import": "./dist/tab/index.js",
             "types": "./dist/tab/index.d.ts"
+        },
+        "./radio": {
+            "import": "./dist/radio/index.js",
+            "types": "./dist/radio/index.d.ts"
         }
     },
     "dependencies": {
         "@headlessui/react": "^1.7.13",
+        "@radix-ui/react-radio-group": "^1.1.2",
         "framer-motion": "^10.6.0",
         "styled-components": "^5.3.9"
     },

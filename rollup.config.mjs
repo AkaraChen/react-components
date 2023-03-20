@@ -20,7 +20,8 @@ const config = {
         'react/jsx-runtime',
         'styled-components',
         '@headlessui/react',
-        'framer-motion'
+        'framer-motion',
+        '@radix-ui/react-radio-group'
     ]
 };
 
@@ -28,7 +29,7 @@ const list = fs.readdirSync('components');
 
 export default defineConfig(
     list.map(component =>
-        Object.assign(config, {
+        Object.assign({}, config, {
             input: `components/${component}/index.ts`,
             output: {
                 dir: `./dist/${component}`,

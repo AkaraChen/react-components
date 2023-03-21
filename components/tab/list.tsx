@@ -9,7 +9,7 @@ const StyledList = styled(HeadlessTab.List)`
     display: flex;
     padding: 0.25em;
     width: fit-content;
-    border-radius: 2px;
+    border-radius: 4px;
 `;
 
 export type ListProps = TabListProps<ElementType>;

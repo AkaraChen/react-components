@@ -1,4 +1,5 @@
 import * as RadixRadio from '@radix-ui/react-radio-group';
+import * as RadixLabel from '@radix-ui/react-label';
 import { motion } from 'framer-motion';
 import { FC, useId, useState } from 'react';
 import styled from 'styled-components';
@@ -9,7 +10,6 @@ const StyledContainer = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0.5em;
 `;
 
 const StyledItem = styled(RadixRadio.Item)`
@@ -57,15 +57,16 @@ const StyledHoverIndicator = styled(motion.div)`
     pointer-events: none;
 `;
 
-const StyledLabel = styled.label`
+const StyledLabel = styled(RadixLabel.Root)`
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding: 0.5em;
 `;
 
 const StyledSpan = styled.span`
     margin-left: 0.5em;
-`
+`;
 
 export const Item: FC<ItemProps> = props => {
     const id = useId();
@@ -85,7 +86,7 @@ export const Item: FC<ItemProps> = props => {
                 <StyledHoverIndicator
                     layoutId="radio"
                     initial={{ opacity: 0.03 }}
-                ></StyledHoverIndicator>
+                />
             )}
         </StyledContainer>
     );

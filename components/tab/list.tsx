@@ -5,7 +5,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 const StyledList = styled(HeadlessTab.List)`
-    background-color: rgb(247, 248, 250);
+    background-color: rgb(242, 243, 245);
     display: flex;
     padding: 0.25em;
     width: fit-content;

@@ -3,7 +3,7 @@ import {
     TabProps as HeadLessTabProps
 } from '@headlessui/react';
 import { ElementType, FC, ReactNode } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 
@@ -11,13 +11,8 @@ const StyledTab = styled.div`
     position: relative;
     padding: 0.5em 1em;
     transition: all 0.5s ease-in-out;
-    color: rgb(78, 89, 105);
+    color: rgb(15, 23, 42);
     cursor: pointer;
-    ${props =>
-        props['aria-selected'] &&
-        css`
-            color: #1677ff;
-        `}
     :focus-visible {
         outline: none;
     }

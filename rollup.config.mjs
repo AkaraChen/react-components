@@ -21,7 +21,8 @@ const config = {
         'styled-components',
         '@headlessui/react',
         'framer-motion',
-        '@radix-ui/react-radio-group'
+        '@radix-ui/react-radio-group',
+        'react-dom'
     ]
 };
 

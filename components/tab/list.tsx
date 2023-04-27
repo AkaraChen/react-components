@@ -7,9 +7,11 @@ import styled from 'styled-components';
 const StyledList = styled(HeadlessTab.List)`
     background-color: rgb(242, 243, 245);
     display: flex;
-    padding: 0.25em;
-    width: fit-content;
+    padding: 4px;
     border-radius: 4px;
+    & * {
+        box-sizing: border-box;
+    }
 `;
 
 export type ListProps = TabListProps<ElementType>;

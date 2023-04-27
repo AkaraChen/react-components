@@ -2,7 +2,7 @@ import { Group, List, Tab } from '.';
 
 export const Default = () => {
     return (
-        <Group>
+        <Group className={'w-48'}>
             <List>
                 <Tab>React</Tab>
                 <Tab>Vue</Tab>

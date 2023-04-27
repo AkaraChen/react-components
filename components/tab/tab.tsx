@@ -9,10 +9,14 @@ import { motion } from 'framer-motion';
 
 const StyledTab = styled.div`
     position: relative;
-    padding: 0.5em 1em;
+    height: 36px;
     transition: all 0.5s ease-in-out;
     color: rgb(15, 23, 42);
     cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     :focus-visible {
         outline: none;
     }
@@ -42,7 +46,7 @@ export const Tab: FC<TabProps> = props => {
                         <div style={{ zIndex: 1, position: 'relative' }}>
                             {props.children as ReactNode}
                         </div>
-                        {selected && <StyledTabIndicator layoutId="tab" />}
+                        {selected && <StyledTabIndicator layoutId="tab" transition={{duration: 0.25}} />}
                     </StyledTab>
                 );
             }}

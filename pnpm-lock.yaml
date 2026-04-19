@@ -21,7 +21,7 @@ importers:
       normalize.css: ^8.0.1
       postcss: ^8.4.23
       prettier: ^2.8.4
-      prettier-config-akrc: ^0.0.0
+      prettier-config-akrc: ^0.0.1
       react: ^18.2.0
       react-dom: ^18.2.0
       rollup: ^3.18.0
@@ -50,7 +50,7 @@ importers:
       normalize.css: 8.0.1
       postcss: 8.4.23
       prettier: 2.8.4
-      prettier-config-akrc: 0.0.0
+      prettier-config-akrc: 0.0.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       rollup: 3.18.0
@@ -2960,8 +2960,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /prettier-config-akrc/0.0.0:
-    resolution: {integrity: sha512-HFo0Wi3dKLIUuIdEGgVvcVrL4vAJCP7dbY7Ra+X323LV45mRdfvJw795b879Qr3BYKTUYrJ41KyhWLHCxlB4eQ==}
+  /prettier-config-akrc/0.0.1:
+    resolution: {integrity: sha512-vfWqoOGfbS0m1popggwBbqNUAlbIcAqmuuwx6Z9Uau1J1jBVldA6c84aZoPauxAQVM0l/pIIkvGL4FsxqVNJig==}
     dev: true
 
   /prettier/2.8.4:
